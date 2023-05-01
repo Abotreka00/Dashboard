@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="page d-flex p-relative">
+        <div class="sidebar b-white p-relative p-20 tet-c">
+            <h3 class="mt-0 p-relative">AL-Rayyan</h3>
+            <ul>
+                <li><a href="Dashboard.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span class="hide-mobile">Dashboard</span>
+                </a></li>
+                <li><a href="Setting.html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span class="hide-mobile">Settings</span>
+                </a></li>
+                <li><a href="Profile.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span class="hide-mobile">Profile</span>
+                </a></li>
+                <li><a href="Projects.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span class="hide-mobile">Projects</span>
+                </a></li>
+                <li><a href="Courses.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span class="hide-mobile">Courses</span>
+                </a></li>
+                <li><a href="Friends.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span class="hide-mobile">Friends</span>
+                </a></li>
+                <li><a href="Files.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span class="hide-mobile">Files</span>
+                </a></li>
+                <li><a href="Plans.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span class="hide-mobile">Plans</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="Setting-page background o-hidden w-full">
+            <div class="head between-flex b-white">
+                <div class="search p-15 p-relative">
+                    <input class="p-10" type="search" placeholder="Tybe A Keyword">
+                </div>
+                <div class="icons">
+                    <span class="p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="img/avatar.jpg" alt="logo">
+                </div>
+            </div>
+            <!-- start Dashboard-page -->
+            <h1 class="p-relative">Setting</h1>
+            <!-- start Dashboard-page -->
+            <div class="content-setting">
+                <div class="wepper">
+                    <div class="box box-1">
+                        <h2>Site Control</h2>
+                        <p>Control The Website If There Is Maintenance</p>
+                        <div class="Website">
+                            <div class="info">
+                                <h4>Website Control</h4>
+                                <p>Open/Close Website And Type The Reason</p>
+                            </div>
+                            <label>
+                                <input class="toggel-checkbox" type="checkbox">
+                                <div class="toggel-check"></div>
+                            </label>
+                        </div> 
+                        <textarea minlength="20" placeholder="Close Message Content" maxlength="200"></textarea>
+                    </div>
+                    <div class="box box-2">
+                        <h2>General Info</h2>
+                        <p>General Information About Your Account</p>
+                        <form method="post">
+                            <label for="First">First Name</label>
+                            <input type="text" name="FIrst" placeholder="First Name" id="First">
+                            <label for="Last">Last Name</label>
+                            <input type="text" name="Last" placeholder="Last Name" id="Last">
+                            <label for="email">Email</label>
+                            <div class="info">
+                                <input type="email" name="email" placeholder="O@nn.sa" disabled id="email">
+                                <a href="#">Change</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box box-3">
+                        <h2>Security Info</h2>
+                        <p>Security Information About Your Account</p>
+                        <div class="Password between-flex">
+                            <div class="info">
+                                <h4>Password</h4>
+                                <p>Last Change On 25/10/2021</p>
+                            </div>
+                            <a href="#">Change</a>
+                        </div>
+                        <div class="Two-Factor between-flex">
+                            <div class="info">
+                                <h4>Two-Factor Authentication</h4>
+                                <p>Enable/Disable The Feature</p>
+                            </div>
+                            <label>
+                                <input class="toggel-checkbox" type="checkbox">
+                                <div class="toggel-check"></div>
+                            </label>
+                        </div>
+                        <div class="Devices between-flex">
+                            <div class="info">
+                                <h4>Devices</h4>
+                                <p>Check The Login Devices List</p>
+                            </div>
+                            <a href="#">Devices</a>
+                        </div>
+                    </div>
+                    <div class="box box-4">
+                        <h2>Social Info</h2>
+                        <p>Social Media Information</p>
+                        <form>
+                            <div class="between-flex">
+                                <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                                <input type="text" name="User" placeholder="Twitter Username">
+                            </div>
+                            <div class="between-flex">
+                                <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                                <input type="text" name="User" placeholder="Facebook Username">
+                            </div>
+                            <div class="between-flex">
+                                <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                                <input type="text" name="User" placeholder="Linkedin Username">
+                            </div>
+                            <div class="between-flex">
+                                <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                                <input type="text" name="User" placeholder="Youtube Username">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box box-5">
+                        <h2>Widgets Control</h2>
+                        <p>Show/Hide Widgets</p>
+                        <div>
+                            <label>
+                                <input type="checkbox" id="Quick" checked>
+                                <span id="Quick">Quick Draft</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="Yearly" checked>
+                                <span id="Yearly">Yearly Targets</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="Tickets" checked>
+                                <span id="Tickets">Tickets Statistics</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="Latest" checked>
+                                <span id="Latest">Latest News</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="Tasks">
+                                <span id="Tasks">Latest Tasks</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="Top" checked>
+                                <span id="Top">Top Search Items</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="box box-6">
+                        <h2>Backup Manager</h2>
+                        <p>Control Backup Time And Location</p>
+                        <form>
+                        <div class="date">
+                            <input type="radio" name="time" id="daily" checked/>
+                            <label for="daily">Daily</label>
+                        </div>
+                        <div class="date ">
+                            <input type="radio" name="time" id="weekly" />
+                            <label for="weekly">Weekly</label>
+                        </div>
+                        <div class="date ">
+                            <input type="radio" name="time" id="monthly" />
+                            <label for="monthly">Monthly</label>
+                        </div>
+                    </form>
+                        <div class="rate">
+                            <input type="radio" name="time" id="Megaman">
+                            <label for="Megaman">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Megaman
+                            </label>
+                            <input type="radio" name="time" id="Saleh" checked>
+                            <label for="Saleh">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Saleh
+                            </label>
+                            <input type="radio" name="time" id="Sigma">
+                            <label for="Sigma">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Sigma
+                            </label>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
