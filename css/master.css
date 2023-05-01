@@ -1114,6 +1114,8 @@ h1::after {
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+    flex-directoin: column;
+    gap : 8px ;
 }
 .page .content-setting .wepper .box-6 .rate label{
     display: flex;
