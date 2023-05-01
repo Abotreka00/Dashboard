@@ -1263,6 +1263,21 @@ h1::after {
     align-items: center;
     gap: 10px;
 }
+@media (max-width : 767px) {
+.content-Profile .box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+    display : flex ;
+    flex-direction : column ;
+    margin : 0 10px 0 0;
+}
+
+
+}
 .content-Profile .box .Skills {
     flex-grow: 1;
     background-color: white;
